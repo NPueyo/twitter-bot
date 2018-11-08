@@ -13,7 +13,7 @@ stream.on('direct_message', function (eventMsg) {
         return callbackHandler(msgID);
     }
 
-    else if (msg.search['Hi','Hello'] !== -1 ) {
+    else if msg.search('Hi','Hello') !== -1  {
         return T.post('direct_messages/new', { 
             screen_name: screenName,
             text: 'Hey, what can I do for you?'} , function () {
@@ -21,7 +21,7 @@ stream.on('direct_message', function (eventMsg) {
         });
     }
 
-    else if (msg.search[‘Apple’,’Red'] !== -1 ) {
+  else if (msg.search[‘Apple’,’Red'] !== -1 ) {
         return T.post('direct_messages/new', { 
             screen_name: screenName,
             text: ‘Love it!’} , function () {
