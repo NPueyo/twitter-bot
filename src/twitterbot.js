@@ -19,4 +19,4 @@ else
             text: "I don't know "
         }, function() {
             callbackHandler(msgID);
-        });
+        })};
