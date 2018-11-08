@@ -1,0 +1,23 @@
+{
+  "name": "twitterbot.js",
+  "version": "1.0.0",
+  "description": "Twitterbot",
+  "main": "index.js",
+  "dependencies": {
+    "create-index": "^2.3.0",
+    "twit": "^2.2.11"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "twitterbot"
+  },
+  "repository": {
+    "type": "git",
+    "url": "na"
+  },
+  "keywords": [
+    "twitterreply"
+  ],
+  "author": "1111-M",
+  "license": "ISC"
+}
