@@ -1,1 +1,1 @@
-<process type>: <command>
+worker: node index.js
