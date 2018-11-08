@@ -1,5 +1,5 @@
 var T = require("./Twit.js");
-var config = require(’./config.js’);
+var config = require("./config.js");
 var my_user_name = require("../config").userName;
 console.log('The bot is starting');
 var timeout = 1000 * 60 * 1; // timeout to send the message 1 min
