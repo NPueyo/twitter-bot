@@ -20,16 +20,7 @@ stream.on('direct_message', function (eventMsg) {
             callbackHandler(msgID);
         });
     }
-
-  else if (msg.search[‘Apple’,’Red'] !== -1 ) {
-        return T.post('direct_messages/new', { 
-            screen_name: screenName,
-            text: ‘Love it!’} , function () {
-            callbackHandler(msgID);
-        });
-    }
-
-    else {
+ else {
         return T.post('direct_messages/new', {
             screen_name: screenName,
             text: "I don't know "
@@ -37,4 +28,4 @@ stream.on('direct_message', function (eventMsg) {
             callbackHandler(msgID);
         });
     }
-});
+};
