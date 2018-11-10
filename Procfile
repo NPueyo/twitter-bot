@@ -1,1 +1,1 @@
-worker: node ./src/twitterbot.js
+worker: node index.js
