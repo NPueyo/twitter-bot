@@ -11,6 +11,7 @@ stream.on('direct_message', function (eventMsg)
   var screenName = eventMsg.direct_message.sender.screen_name;
   var msgID = eventMsg.direct_message.id_str;
 
+  };
   if (msg.search('#test') !== -1) {
     return T.post('statuses/update', { status: msg}, function () {
       console.log('I tweeted the message');
