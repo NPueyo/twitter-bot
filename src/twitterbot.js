@@ -3,8 +3,6 @@ const T = require("./Twit.js");
 
 // Reply to Twitter messages
 
-const AutoDM = () => 
-	
 
 	function replyToDirectMessage(){
 
@@ -33,4 +31,3 @@ stream.on('direct_message', function (eventMsg) {
     }
 });
 }
-module.exports = AutoDM;
