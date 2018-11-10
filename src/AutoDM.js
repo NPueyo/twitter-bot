@@ -21,7 +21,7 @@ stream.on('direct_message', function (eventMsg) {
   console.log(screenName + " says: " + msg );
 
   // avoid replying to yourself when the recipient is you
-  if(screenName != eventMsg.direct_message.recipient_screen_name){
+  if(screenName != my_user_name){
 
     //post reply
     T.post("direct_messages/new",replyTo, function(err,data,response){
