@@ -26,5 +26,4 @@ stream.on('direct_message', function (eventMsg) {
     });
 });
 
-
 //module.exports = AutoDM;
