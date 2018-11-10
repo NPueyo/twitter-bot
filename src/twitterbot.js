@@ -2,7 +2,9 @@ const T = require("./Twit.js");
 // const my_user_name = require("../config").userName;
 
 // Reply to Twitter messages
- function replyToDirectMessage(){
+
+const AutoDM = () => {
+	function replyToDirectMessage(){
 
   //get the user stream
   var stream = T.stream('user');
@@ -29,3 +31,6 @@ stream.on('direct_message', function (eventMsg) {
     }
 });
 }
+};
+
+module.exports = AutoDM;
