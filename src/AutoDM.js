@@ -1,5 +1,5 @@
 const T = require("./Twit.js");
-const my_user_name = require("../config").userName;
+//const my_user_name = require("../config").userName;
 const timeout = 1000 * 60 * 5; // timeout to send the message 5 min
 
 const AutoDM = () => {
@@ -9,7 +9,7 @@ const AutoDM = () => {
 
 stream.on('direct_message', function (eventMsg) {
   var msg = eventMsg.direct_message.text;
-  var screenName =  my_user_name //eventMsg.direct_message.sender.screen_name;
+  var screenName =  eventMsg.direct_message.sender.screen_name;
   var userId = eventMsg.direct_message.sender.id;
 
   // reply object
