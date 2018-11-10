@@ -5,13 +5,12 @@ const my_user_name = require("../config").userName;
 
 var stream = T.stream('user');
 
-const AutoDM = () => {
-stream.on('direct_message', function (eventMsg) 
+stream.on('direct_message', function (eventMsg) {
   var msg = eventMsg.direct_message.text;
   var screenName = eventMsg.direct_message.sender.screen_name;
   var msgID = eventMsg.direct_message.id_str;
 
-  };
+
   if (msg.search('#test') !== -1) {
     return T.post('statuses/update', { status: msg}, function () {
       console.log('I tweeted the message');
@@ -27,5 +26,5 @@ stream.on('direct_message', function (eventMsg)
     });
 });
 
-}
-module.exports = AutoDM;
+
+//module.exports = AutoDM;
