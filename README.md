@@ -109,7 +109,7 @@ $ tree .
     └── Twit.js
 ```
 As you can see the project is a simple node js app with an index.js file as an entry point:
-> infex.js file
+> index.js file
 ![](https://cdn-images-1.medium.com/max/1600/1*Y-eOVjfnFZYCN5LQUblrhw.png)
 
 
